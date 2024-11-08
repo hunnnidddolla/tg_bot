@@ -1,8 +1,11 @@
 import telebot
 import requests
 import random
+import os
 
-bot_token = ''
+bot_token = os.environ.get('TOKEN')
+
+
 bot = telebot.TeleBot(bot_token)
 poke_api_url = 'https://pokeapi.co/api/v2/pokemon/'
 
